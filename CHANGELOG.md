@@ -1,5 +1,15 @@
 # @sushilthapa98/tiny-test
 
+## 3.0.0
+
+### Major Changes
+
+- e43228e: new update v2
+
+### Patch Changes
+
+- e43228e: minor typo fix in method greet5
+
 ## 2.0.0
 
 ### Major Changes
