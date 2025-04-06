@@ -22,34 +22,14 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-        # changeset version
-      - name: Updates package.json and CHANGELOG.md
-        run: npx changeset version
-        #publish to npm
-      - name: publish to npm
-        run: npx changeset publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set version as environment variable
-        run: |
-          VERSION=$(node -p "require('./package.json').version")
-          echo "VERSION=v$VERSION" >> $GITHUB_ENV
-      - name: Create Git tag
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git tag -a "${{ env.VERSION }}" -m "Release ${{ env.VERSION }}"
-          git push origin "${{ env.VERSION }}"
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@v1
         with:
-          tag_name: ${{ env.VERSION }}
-          name: Release ${{ env.VERSION }}
-          generate_release_notes: true
+          publish: changeset publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # - uses: softprops/action-gh-release@v1
       #   with:
