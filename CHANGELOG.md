@@ -1,5 +1,11 @@
 # @sushilthapa98/tiny-test
 
+## 2.0.0
+
+### Major Changes
+
+- 189b6df: new update v2
+
 ## 1.1.3
 
 ### Patch Changes
