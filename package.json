@@ -1,5 +1,5 @@
 {
-  "name": "tiny-test",
+  "name": "@sushilthapa98/tiny-test",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "type": "module",
@@ -8,9 +8,16 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushilthapa98/tiny-test.git"
+  },
+  "keywords": [
+    "tiny",
+    "test"
+  ],
+  "author": "Sushil Thapa",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/node": "^22.14.0",
