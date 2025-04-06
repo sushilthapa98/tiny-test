@@ -3,7 +3,7 @@ const greet = (name: string): string => {
 };
 
 const greet2 = (name: string): string => {
-  return `Hello2, ${name}!`;
+  return `Hello23, ${name}!`;
 };
 
 console.log(greet('World'));
