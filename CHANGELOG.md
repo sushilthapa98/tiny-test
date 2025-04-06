@@ -1,5 +1,11 @@
 # @sushilthapa98/tiny-test
 
+## 1.1.3
+
+### Patch Changes
+
+- 1061bee: added new method
+
 ## 1.1.2
 
 ### Patch Changes
