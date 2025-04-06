@@ -1,5 +1,11 @@
 # @sushilthapa98/tiny-test
 
+## 2.0.1
+
+### Patch Changes
+
+- 0d593ad: Fix minor typo in greet5
+
 ## 2.0.0
 
 ### Major Changes
