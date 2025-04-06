@@ -11,7 +11,7 @@ const greet3 = (name: string): string => {
 };
 
 const greet5 = (name: string): string => {
-  return `Hello5, ${name}!`;
+  return `Hello, ${name}!`;
 };
 
 console.log(greet('World'));
