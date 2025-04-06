@@ -1,5 +1,19 @@
 # @sushilthapa98/tiny-test
 
+## 2.0.0
+
+### Major Changes
+
+- 0e092e8: new update v2
+
+### Minor Changes
+
+- 0e092e8: update package manager
+
+### Patch Changes
+
+- 0e092e8: minor typo fix in method greet5
+
 ## 3.0.0
 
 ### Major Changes
